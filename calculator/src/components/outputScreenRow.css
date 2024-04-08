@@ -1,0 +1,8 @@
+.screen-row input {
+    width: 400px;
+    background: #ddd;
+    border: 0px;
+    color: #222;
+    padding: 10px;
+    text-align: right;
+}
