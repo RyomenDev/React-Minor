@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+}
+
+.password-strength-popup {
+  position: absolute;
+  top: 50%;
+  left: -250px; /* Adjust the left position to position the pop-up just to the left of the main box */
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  width: 200px; /* Adjust the width as needed */
+  overflow-wrap: break-word; /* Allow text to wrap onto the next line */
+}
+
+.password-strength-popup.visible {
+  display: block;
+}

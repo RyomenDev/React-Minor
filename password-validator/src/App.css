@@ -1,0 +1,24 @@
+body {
+  background-color: #f0f0f0;
+  /* Set background color of the page */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
+  display: flex;
+  /* Use flexbox for centering */
+  justify-content: center;
+  /* Horizontally center the content */
+  align-items: center;
+  /* Vertically center the content */
+  height: 100vh;
+  /* Set height of the page to viewport height */
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
