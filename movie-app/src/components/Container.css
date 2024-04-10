@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 20rem;
+    text-align: left;
+}
