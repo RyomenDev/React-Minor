@@ -14,29 +14,22 @@ const Container = (props) => {
           <h1 style={{ color: "white" }}>No Data Found</h1>
         ) : (
           <>
-            {state?.results?.map(
-              (
-                e // ? =>incase there is no data/Null
-                console.log(e);
-              ) => (
-                <div className="item" onClick={() => openDetail(e.imdbID)}>
-                  {e.Poster ? (
-                    <img
-                      style={{ width: "200px" }}
-                      src={e.Poster}
-                      alt="NOT FOUND"
-                    />
-                  ) : (
-                    <img
-                      style={{ width: "200px" }}
-                      src={noImg}
-                      alt="NOT FOUND"
-                    />
-                  )}
-                  <h3 style={{ color: "white" }}>{e.Title}</h3>
-                </div>
-              )
-            )}
+            {state.results.map((e) => (
+              <div
+                className="item"
+                key={e.imdbID}
+                onClick={() => openDetail(e.imdbID)}
+              >
+                {" "}
+                {/* {console.log("Poster URL:", e.Poster)} Log the value */}
+                {e.Poster && e.Poster !== "N/A" ? (
+                  <img src={e.Poster} alt={e.Title} />
+                ) : (
+                  <img src={noImg} alt="NOT FOUND" />
+                )}
+                <h3 style={{ color: "white" }}>{e.Title}</h3>
+              </div>
+            ))}
           </>
         )}
       </div>

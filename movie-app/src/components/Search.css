@@ -4,34 +4,36 @@
     align-items: center;
     margin: 1rem 0;
 }
- 
-.search {
-    width: 60%;
+
+.search-bar {
+    width: 80%;
+    max-width: 400px;
+    /* Limit the maximum width of the input field */
     display: block;
-    padding: 15px;
+    padding: 20px;
     border: none;
     outline: none;
     background: none;
     background-color: #fff;
     border-radius: 8px;
     color: dimgrey;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 300;
     transition: 0.4s ease-out;
 }
- 
+
 .search:focus {
     box-shadow: 0 0 8px 3px #4484c4;
 }
- 
+
 @media screen and (max-width: 685px) {
     .search {
-        width: 75%;
+        width: 90%; /* Adjust the width for smaller screens */
     }
 }
- 
+
 @media screen and (max-width: 410px) {
     .search {
-        width: 85%;
+        width: 95%;
     }
 }

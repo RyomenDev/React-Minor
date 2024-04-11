@@ -1,3 +1,7 @@
+# Preview
+![Alt text](_readMe/image1.png)
+![Alt text](_readMe/image2.png)
+
 # Joke Generator React App
 
 This is a simple React application that fetches random jokes from the JokeAPI and displays them on the webpage.
