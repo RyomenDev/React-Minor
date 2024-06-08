@@ -61,7 +61,7 @@ function App() {
       setState((prevState) => {
         return {
           ...prevState,
-          selected: result
+          selected: result,
         };
       });
     });
